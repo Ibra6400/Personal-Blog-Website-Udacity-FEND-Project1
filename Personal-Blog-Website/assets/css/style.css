@@ -1,0 +1,975 @@
+/* Import css File */
+@import "logo.css";
+@import "navigation.css";
+@import "footer.css";
+
+
+/* CSS element Selector */
+
+/* Blog Body */
+body {
+  margin: 0;
+}
+/* Heading */
+h1 {
+  text-align: center;
+  font-family: inherit;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  font-size: 60px;
+}
+/* Sub-Heading */
+h2 {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 90px;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+
+/* CSS #id Selector */
+
+/* CSS Grid */
+#contianer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sb sb sb main main main main main"
+    "section section section section section section section section"
+    "section2 section2 section2 section2 section2 section2 section2 section2"
+    "ft ft ft ft ft ft ft ft";
+}
+/* Header Grid */
+#Header {
+  grid-area: hd;
+  height: 700px;
+  background-image: url(../img/beans-beautiful-black-coffee.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* Slid Bar Grid */
+#Slidbar {
+  height: 500px;
+  width:auto;
+  grid-area: sb;
+  background: #ffff;
+  place-items: center;
+  text-align: center;
+  padding-left: 20px;
+}
+/* Contact */
+#Contant{
+  height: 500px;
+  width: auto;
+  grid-area: main;
+  place-items: center;
+  background: #ffff;
+  text-align: center;
+}
+/* First Section Grid */
+#Section {
+  height: 750px;
+  grid-area: section;
+  place-items: center;
+  text-align: center;
+  background: url(../img/blog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: color-burn;
+}
+/* Second Section Grid */
+#Section2 {
+  width: auto;
+  height: 1200px;
+  text-align: center;
+  background-image: url(../img/Type-Section2-background.jpg);
+  grid-area: section2;
+}
+/* Footer Grid */
+#Footer {
+  grid-area: ft;
+  height: 110px;
+}
+
+/* CSS .class Selector */
+
+/* Slide Bar Box */
+
+/* Subscribe Section */
+.subscribe-box {
+  height: auto;
+  width: auto;
+  padding-left: 30px;
+}
+
+.Subscribe-header {
+  padding-top: 100px;
+}
+/* User Input */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* Contant Box */
+
+/* About */
+.about p {
+  font-size: 20px;
+  padding: 0 100px;
+  line-height: 1.5;
+}
+
+/* Sectoin Box */
+
+/* Blogs Cards */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding-top: 5px;
+}
+/* Card Contant */
+.card {
+  height: 290px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Card havor */
+.card:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* Card Image Box */
+.card-image {
+  height: 200px;
+  width: 100%;
+}
+/* Card Image */
+.blog-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* Card Title display */
+.top-text {
+  padding: 5px;
+}
+/* Card Title */
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+/* Card Contant Display*/
+.bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+/* Card Contant Hover*/
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+/* Card Contant */
+.text-card {
+  text-align: justify;
+}
+/* Button Display */
+.btn {
+  margin: 10px 0;
+  text-align: left;
+}
+/* Button Link */
+.btn a {
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+/* Button Link  Hover*/
+.btn a:hover {
+  transform: scale(0.9);
+}
+
+/* Section2 Box */
+
+/* Section2 Display - CSS Flex */
+.section2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px 20px;
+  padding-top: 5px;
+}
+/* First Type Display */
+.first-type{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+/* Second Type Display */
+.second-type{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+/* First Coffee Type Image */
+.coffee-cup1 {
+  width: 80%;
+}
+/* Second Coffee Type Image */
+.coffee-cup2 {
+  width: auto;
+}
+/* Name of Coffee Types */
+.name{
+   font-size: 30px;
+}
+/* Coffee Types Details display */
+.type-details{
+  margin-bottom: 30px;
+}
+/* Coffee Types Details */
+.detail {
+  font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 10%;
+  line-height: 1.8em;
+  font-size: 20px;
+  margin-top: 0;
+  color: #888888;
+}
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  #contianer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "sb sb  main main main main main"
+      "section section section section section section section section"
+      "section2 section2 section2 section2 section2 section2 section2 section2"
+      "ft ft ft ft ft ft ft ft";
+  }
+  /* Header Grid */
+  #Header {
+    grid-area: hd;
+    height: 700px;
+    width:auto;
+    background-image: url(../img/beans-beautiful-black-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /* Slid Bar Grid */
+  #Slidbar {
+    height: 500px;
+    width: auto;
+    grid-area: sb;
+    background: #ffff;
+    text-align: center;
+
+  }
+  /* Contact */
+  #Contant{
+    height: 500px;
+    width: auto;
+    grid-area: main;
+    place-items: center;
+    background: #ffff;
+    text-align: center;
+  }
+  /* First Section Grid */
+  #Section {
+    height: 800px;
+    grid-area: section;
+    place-items: center;
+    text-align: center;
+    background: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: color-burn;
+  }
+  /* Second Section Grid */
+  #Section2 {
+    width: auto;
+    height: 1500px;
+    text-align: center;
+    background-image: url(../img/Type-Section2-background.jpg);
+    grid-area: section2;
+  }
+  /* Footer Grid */
+  #Footer {
+    grid-area: ft;
+    height: 110px;
+  }
+  /* Main Contant */
+  .about p {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 1.5;
+  }
+  /* Slide Bar contant */
+  .subscribe-box {
+    height: 200px;
+    width: auto;
+    padding: 0 50px;
+  }
+  /* Blogs Cards */
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 5px;
+  }
+  /* Card Title display */
+  .top-text {
+    padding: 2px;
+  }
+  /* Card Title */
+  .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 3px;
+    color: #202020;
+  }
+
+  /* First Type Display */
+  .first-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  /* Second Type Display */
+  .second-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  /* First Coffee Type Image */
+  .coffee-cup1 {
+    width: 60%;
+  }
+  /* Second Coffee Type Image */
+  .coffee-cup2 {
+    width: 100%;
+    margin:0;
+  }
+  /* Name of Coffee Types */
+  .name{
+     font-size: 30px;
+
+  }
+  /* Coffee Types Details display */
+  .type-details{
+    margin-bottom: 30px;
+  }
+  /* Coffee Types Details */
+  .detail {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 10%;
+    line-height: 1.8em;
+    font-size: 20px;
+    margin-top: 0;
+    color: #888888;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #contianer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "sb sb  main main main main main"
+      "section section section section section section section section"
+      "section2 section2 section2 section2 section2 section2 section2 section2"
+      "ft ft ft ft ft ft ft ft";
+  }
+  /* Header Grid */
+  #Header {
+    grid-area: hd;
+    height: 700px;
+    width:auto;
+    background-image: url(../img/beans-beautiful-black-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /* Slid Bar Grid */
+  #Slidbar {
+    height: 500px;
+    width: auto;
+    grid-area: sb;
+    background: #ffff;
+    text-align: center;
+
+  }
+  /* Contact */
+  #Contant{
+    height: 500px;
+    width: auto;
+    grid-area: main;
+    place-items: center;
+    background: #ffff;
+    text-align: center;
+  }
+  /* First Section Grid */
+  #Section {
+    height: 800px;
+    grid-area: section;
+    place-items: center;
+    text-align: center;
+    background: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: color-burn;
+  }
+  /* Second Section Grid */
+  #Section2 {
+    width: auto;
+    height: 1500px;
+    text-align: center;
+    background-image: url(../img/Type-Section2-background.jpg);
+    grid-area: section2;
+  }
+  /* Footer Grid */
+  #Footer {
+    grid-area: ft;
+    height: 110px;
+  }
+  /* Main Contant */
+  .about p {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 1.5;
+  }
+  /* Slide Bar contant */
+  .subscribe-box {
+    height: 200px;
+    width: auto;
+    padding: 0 50px;
+  }
+  /* Blogs Cards */
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 5px;
+  }
+  /* Card Title display */
+  .top-text {
+    padding: 2px;
+  }
+  /* Card Title */
+  .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 3px;
+    color: #202020;
+  }
+
+  /* First Type Display */
+  .first-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  /* Second Type Display */
+  .second-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  /* First Coffee Type Image */
+  .coffee-cup1 {
+    width: 60%;
+  }
+  /* Second Coffee Type Image */
+  .coffee-cup2 {
+    width: 100%;
+    margin:0;
+  }
+  /* Name of Coffee Types */
+  .name{
+     font-size: 30px;
+
+  }
+  /* Coffee Types Details display */
+  .type-details{
+    margin-bottom: 30px;
+  }
+  /* Coffee Types Details */
+  .detail {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 10%;
+    line-height: 1.8em;
+    font-size: 20px;
+    margin-top: 0;
+    color: #888888;
+  }
+}
+/* Media Screen */
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #contianer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "sb sb sb sb sb sb sb sb"
+      "section section section section section section section section"
+      "section2 section2 section2 section2 section2 section2 section2 section2"
+      "ft ft ft ft ft ft ft ft";
+  }
+  /* Header Grid */
+  #Header {
+    grid-area: hd;
+    height: 700px;
+    width:auto;
+    background-image: url(../img/beans-beautiful-black-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /* Slid Bar Grid */
+  #Slidbar {
+    height: 500px;
+    width: auto;
+    grid-area: sb;
+    background: #ffff;
+    text-align: center;
+
+  }
+  /* Contact */
+  #Contant{
+    height: 500px;
+    width: auto;
+    grid-area: main;
+    place-items: center;
+    background: #ffff;
+    text-align: center;
+  }
+  /* First Section Grid */
+  #Section {
+    height: 1300px;
+    grid-area: section;
+    place-items: center;
+    text-align: center;
+    background: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: color-burn;
+  }
+  /* Second Section Grid */
+  #Section2 {
+    width: auto;
+    height: 1500px;
+    text-align: center;
+    background-image: url(../img/Type-Section2-background.jpg);
+    grid-area: section2;
+  }
+  /* Footer Grid */
+  #Footer {
+    grid-area: ft;
+    height: 110px;
+  }
+  /* Main Contant */
+  .about p {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 1.5;
+  }
+  /* Slide Bar contant */
+  .subscribe-box {
+    height: 200px;
+    width: auto;
+    padding: 0 50px;
+  }
+  /* Blogs Cards */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 5px;
+  }
+
+  /* First Type Display */
+  .first-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* Second Type Display */
+  .second-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* First Coffee Type Image */
+  .coffee-cup1 {
+    width: 80%;
+  }
+  /* Second Coffee Type Image */
+  .coffee-cup2 {
+    width: 55%;
+  }
+  /* Name of Coffee Types */
+  .name{
+     font-size: 30px;
+  }
+  /* Coffee Types Details display */
+  .type-details{
+    margin-bottom: 30px;
+  }
+  /* Coffee Types Details */
+  .detail {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 10%;
+    line-height: 1.8em;
+    font-size: 20px;
+    margin-top: 0;
+    color: #888888;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #contianer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "sb sb sb sb sb sb sb sb"
+      "section section section section section section section section"
+      "section2 section2 section2 section2 section2 section2 section2 section2"
+      "ft ft ft ft ft ft ft ft";
+  }
+  /* Header Grid */
+  #Header {
+    grid-area: hd;
+    height: 700px;
+    width:auto;
+    background-image: url(../img/beans-beautiful-black-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /* Slid Bar Grid */
+  #Slidbar {
+    height: 500px;
+    width: auto;
+    grid-area: sb;
+    background: #ffff;
+    text-align: center;
+
+  }
+  /* Contact */
+  #Contant{
+    height: 500px;
+    width: auto;
+    grid-area: main;
+    place-items: center;
+    background: #ffff;
+    text-align: center;
+  }
+  /* First Section Grid */
+  #Section {
+    height: 1300px;
+    grid-area: section;
+    place-items: center;
+    text-align: center;
+    background: url(../img/blog.jpg;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: color-burn;
+  }
+
+  /* Second Section Grid */
+  #Section2 {
+    width: auto;
+    height: 1500px;
+    text-align: center;
+    background-image: url(../img/Type-Section2-background.jpg);
+    grid-area: section2;
+  }
+  /* Footer Grid */
+  #Footer {
+    grid-area: ft;
+    height: 110px;
+  }
+  /* Main Contant */
+  .about p {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 1.5;
+  }
+/* Slide Bar contant */
+  .subscribe-box {
+    height: 200px;
+    width: auto;
+    padding: 0 50px;
+  }
+  /* Blogs Cards */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 5px;
+  }
+
+  /* First Type Display */
+  .first-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* Second Type Display */
+  .second-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* First Coffee Type Image */
+  .coffee-cup1 {
+    width: 80%;
+  }
+  /* Second Coffee Type Image */
+  .coffee-cup2 {
+    width: 55%;
+  }
+  /* Name of Coffee Types */
+  .name{
+     font-size: 30px;
+  }
+  /* Coffee Types Details display */
+  .type-details{
+    margin-bottom: 30px;
+  }
+  /* Coffee Types Details */
+  .detail {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 10%;
+    line-height: 1.8em;
+    font-size: 20px;
+    margin-top: 0;
+    color: #888888;
+  }
+
+
+}
+@media (max-width: 319px) {
+
+  #contianer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "sb sb sb sb sb sb sb sb"
+      "section section section section section section section section"
+      "section2 section2 section2 section2 section2 section2 section2 section2"
+      "ft ft ft ft ft ft ft ft";
+  }
+  /* Header Grid */
+  #Header {
+    grid-area: hd;
+    height: 700px;
+    width:auto;
+    background-image: url(../img/beans-beautiful-black-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  /* Slid Bar Grid */
+  #Slidbar {
+    height: 500px;
+    width: auto;
+    grid-area: sb;
+    background: #ffff;
+    text-align: center;
+
+  }
+  /* Contact */
+  #Contant{
+    height: 500px;
+    width: auto;
+    grid-area: main;
+    place-items: center;
+    background: #ffff;
+    text-align: center;
+  }
+  /* First Section Grid */
+  #Section {
+    height: 1300px;
+    grid-area: section;
+    place-items: center;
+    text-align: center;
+    background: url(../img/blog.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: color-burn;
+  }
+  /* Second Section Grid */
+  #Section2 {
+    width: auto;
+    height: 1500px;
+    text-align: center;
+    background-image: url(../img/Type-Section2-background.jpg);
+    grid-area: section2;
+  }
+  /* Footer Grid */
+  #Footer {
+    grid-area: ft;
+    height: 110px;
+  }
+  /* Main Contant */
+  .about p {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 1.5;
+  }
+/* Slide Bar contant */
+  .subscribe-box {
+    height: 200px;
+    width: auto;
+    padding: 0 50px;
+  }
+  /* Blogs Cards */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 5px;
+  }
+
+  /* First Type Display */
+  .first-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* Second Type Display */
+  .second-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* First Coffee Type Image */
+  .coffee-cup1 {
+    width: 80%;
+  }
+  /* Second Coffee Type Image */
+  .coffee-cup2 {
+    width: 55%;
+  }
+  /* Name of Coffee Types */
+  .name{
+     font-size: 30px;
+  }
+  /* Coffee Types Details display */
+  .type-details{
+    margin-bottom: 30px;
+  }
+  /* Coffee Types Details */
+  .detail {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 10%;
+    line-height: 1.8em;
+    font-size: 20px;
+    margin-top: 0;
+    color: #888888;
+  }
+
+
+}

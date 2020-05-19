@@ -1,0 +1,31 @@
+/* navigation Section */
+/* navigation Container Display */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* Navigation List Display*/
+.nav-list li {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+}
+
+/* Navigation a Tag */
+.nav-list a {
+  font-size: 25px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+
+/* Navigation Hover */
+.nav-list a:hover {
+  color: #d94f5c;
+  border-bottom: red solid 1px;
+}
