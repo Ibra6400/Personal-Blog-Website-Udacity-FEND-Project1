@@ -1,0 +1,463 @@
+/* Import css file */
+@import "logo.css";
+@import "navigation.css";
+@import "footer.css";
+
+/* CSS element Selector */
+/* Third Blog Body */
+body {
+  margin: 0;
+}
+
+/* Heading */
+h1 {
+  text-align: left;
+  font-family: inherit;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  font-size: 60px;
+}
+
+/* Sub-Heading */
+h2 {
+  font-size: 1.953rem;
+  margin-top: 50px;
+}
+
+/* Sub-Heading */
+h3 {
+  font-size: 1.563em;
+  text-align: left;
+}
+/* CSS #id Selector */
+/* CSS Grid */
+.contianer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main"
+}
+
+/*Header*/
+#header {
+  grid-area: hd;
+  width: auto;
+  height: 600px;
+  background-image: url(../img/Coffee-online-Markting.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Main Section */
+#main {
+  grid-area: main;
+  width: auto;
+  height: 1300px;
+  margin-top: 20px;
+  margin: 30px 100px 0 100px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Profile Disply */
+.profile-container {
+  width: auto;
+  height: auto;
+  background: #5b5b5b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.profile {
+  width: 300px;
+}
+
+.bio p {
+  padding: 0 30px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.social-icon {
+  color: white;
+  margin: 20px 10px;
+}
+
+.blog-heading {
+  font-size: 2.441rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.blog-paragraph {
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.blog-subheading {
+  text-align: left;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.btn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+/*Media Screen */
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .logo-header {
+    font-size: 50px;
+  }
+
+  #main {
+    grid-area: main;
+    width: auto;
+    height: 4300px;
+    margin-top: 20px;
+    margin: 30px 100px 0 100px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .profile-container {
+    width: auto;
+    height: auto;
+    background: #5b5b5b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    width: 300px;
+  }
+
+  .avatar {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    margin-top: 10px;
+  }
+
+  .Current-Company {
+    padding-left: 20px;
+  }
+
+  .bio p {
+    padding: 0 30px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .social-icon {
+    color: white;
+    margin: 20px 10px;
+  }
+
+  .blog-heading {
+    font-size: 2.441rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .blog-paragraph {
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .blog-subheading {
+    text-align: left;
+  }
+
+  .logo-img {
+    height: 10%;
+    width: 5%;
+    margin-top: 20px;
+    padding-top: 0px;
+    margin-left: 130px;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+}
+
+/*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .logo-header {
+    font-size: 50px;
+  }
+
+  #main {
+    grid-area: main;
+    width: auto;
+    height: 4300px;
+    margin-top: 20px;
+    margin: 30px 100px 0 100px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .profile-container {
+    width: auto;
+    height: auto;
+    background: #5b5b5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    width: 300px;
+  }
+
+  .avatar {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    margin-top: 10px;
+  }
+
+  .Current-Company {
+    padding-left: 20px;
+  }
+
+  .bio p {
+    padding: 0 30px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .social-icon {
+    color: white;
+    margin: 20px 10px;
+  }
+
+  .blog-heading {
+    font-size: 2.441rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .blog-paragraph {
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .blog-subheading {
+    text-align: left;
+  }
+
+  .logo-img {
+    height: 10%;
+    width: 5%;
+    margin-top: 20px;
+    padding-top: 0px;
+    margin-left: 130px;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .logo-header {
+    font-size: 50px;
+  }
+
+  #main {
+    grid-area: main;
+    width: auto;
+    height: 4300px;
+    margin-top: 20px;
+    margin: 30px 100px 0 100px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .profile-container {
+    width: auto;
+    height: auto;
+    background: #5b5b5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    width: 300px;
+  }
+
+  .avatar {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    margin-top: 10px;
+  }
+
+  .Current-Company {
+    padding-left: 20px;
+  }
+
+  .bio p {
+    padding: 0 30px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .social-icon {
+    color: white;
+    margin: 20px 10px;
+  }
+
+  .blog-heading {
+    font-size: 2.441rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .blog-paragraph {
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .blog-subheading {
+    text-align: left;
+  }
+
+  .logo-img {
+    height: 10%;
+    width: 5%;
+    margin-top: 20px;
+    padding-top: 0px;
+    margin-left: 130px;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo-header {
+    font-size: 50px;
+  }
+
+  #main {
+    grid-area: main;
+    width: auto;
+    height: 4800px;
+    margin-top: 20px;
+    margin: 30px 100px 0 100px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .profile-container {
+    width: auto;
+    height: auto;
+    background: #5b5b5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    width: 300px;
+  }
+
+  .avatar {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    margin-top: 10px;
+  }
+
+  .Current-Company {
+    padding-left: 20px;
+  }
+
+  .bio p {
+    padding: 0 30px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .social-icon {
+    color: white;
+    margin: 20px 10px;
+  }
+
+  .blog-heading {
+    font-size: 2.441rem;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .blog-paragraph {
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .blog-subheading {
+    text-align: left;
+  }
+
+  .logo-img {
+    height: 10%;
+    width: 5%;
+    margin-top: 20px;
+    padding-top: 0px;
+    margin-left: 130px;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+}
